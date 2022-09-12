@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+
+{%block content%}
+
 <div>
     {% for pet in pets %}
     <div class="petname">
@@ -12,3 +16,5 @@
     <p class="hidden">{{ pet.description }}</p>
     {% endfor %}
 </div>
+
+{%endblock%}
